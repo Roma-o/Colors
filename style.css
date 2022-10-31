@@ -1,0 +1,33 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: borderl-box;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   font-family: 'Russo One', sans-serif;
+}
+
+.col {
+   flex: 1;
+   background: linear-gradient(rgb(169, 169, 255), rgb(255, 255, 255));
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid black;
+}
+
+.col h2 {
+   padding: 10px;
+   font-size: 38px;
+   border-radius: 10px;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.col h2:hover {
+   background: rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
