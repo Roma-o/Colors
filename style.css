@@ -24,10 +24,23 @@ body {
    padding: 10px;
    font-size: 38px;
    border-radius: 10px;
-   transition: background-color 0.2s ease-in-out;
+   transition: background-color 0.3s ease-in-out;
 }
 
 .col h2:hover {
    background: rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+
+.col button {
+   background: none;
+   border: none;
+   font-size: 34px;
+   transition: color 0.3s ease-in-out;
+   padding: 10px;
+}
+
+.col button:hover {
+   color: rgb(6, 190, 0);
    cursor: pointer;
 }
