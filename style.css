@@ -12,12 +12,10 @@ body {
 
 .col {
    flex: 1;
-   background: linear-gradient(rgb(169, 169, 255), rgb(255, 255, 255));
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   border: 1px solid black;
 }
 
 .col h2 {
@@ -33,14 +31,16 @@ body {
 }
 
 .col button {
+   outline: none;
    background: none;
    border: none;
    font-size: 34px;
-   transition: color 0.3s ease-in-out;
+   border-radius: 10px;
+   transition: background-color 0.3s ease-in-out;
    padding: 10px;
 }
 
 .col button:hover {
-   color: rgb(6, 190, 0);
+   background: rgba(0, 0, 0, 0.2);
    cursor: pointer;
 }
