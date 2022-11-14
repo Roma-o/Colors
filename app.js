@@ -1,4 +1,4 @@
-alert('Press space')
+alert('press "space" to change colors')
 
 document.addEventListener('keydown', event => {
    event.preventDefault()
@@ -18,6 +18,8 @@ document.addEventListener('click', event => {
 
       node.classList.toggle('fa-lock-open')
       node.classList.toggle('fa-lock')
+   } else if (type === 'copy') {
+      copyToClickboard(event.target.textContent)
    }
 })
 
@@ -32,6 +34,10 @@ function generateRandaomColor() {
       color += hexCodes[Math.floor(Math.random() * hexCodes.length)]
    }
    return '#' + color
+}
+
+function copyToClickboard(text) {
+   return navigator.clipboard.writeText(text)
 }
 
 function setRandomColors() {
